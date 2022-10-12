@@ -3,19 +3,15 @@ import Typography from "@mui/material/Typography";
 import Title from "../../common/Title";
 import { Grid } from "@mui/material";
 import { Paper } from "@mui/material";
+import useStyles from "./../theme";
 
 export default function LocationCount(data) {
+  let classes = useStyles();
   let today = new Date();
 
   return (
-    <Grid item xs={12} md={4} lg={3}>
-      <Paper
-        sx={{
-          p: 2,
-          display: "flex",
-          flexDirection: "column",
-          height: 500,
-        }}
+    <Grid item xs={2}>
+      <Paper className={classes.locationCountPaper}
       >
         <React.Fragment>
           <Title>Number Of Office's</Title>

@@ -53,7 +53,7 @@ function UserAccount() {
     let result = await callEditUser(formData);
     if (result.sucess) {
       history.push("/dashboard");
-      // setCurrentUser(result.user)
+      setCurrentUser(result.user)
     } else {
       console.log("Error logging in");
       setFormErrors(result.errors);
@@ -179,13 +179,14 @@ function UserAccount() {
                 variant="contained"
                 className={classes.userSubmitBtn}
                 onClick={handleEditInfo}
+                sx={{mt:2}}
               >
                 Edit My Info
               </Button>
             )}
           </Box>
         </Box>
-        <Copyright className={classes.userCopyRight} />
+        <Copyright className={classes.userCopyRight} sx={{mt:2}}/>
         {formErrors.length ? (
           <Alert type="danger" messages={formErrors} />
         ) : null}

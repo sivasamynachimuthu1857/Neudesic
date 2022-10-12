@@ -11,8 +11,10 @@ import Title from "../../common/Title";
 import HouseIcon from "@mui/icons-material/House";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
+import useStyles from "./../theme";
 
 export default function LocationPagination(data) {
+  let classes = useStyles();
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(10);
 
@@ -27,7 +29,7 @@ export default function LocationPagination(data) {
 
   return (
     <Grid item xs={12}>
-      <Paper sx={{ p: 2, display: "flex", flexDirection: "column" }}>
+      <Paper className={classes.locationPaginationPaper}>
         <React.Fragment>
           <Title>Neudesic office locations</Title>
           <TablePagination
