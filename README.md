@@ -6,6 +6,6 @@ Run 'npm i' to download all dependencies
 Run 'npm start' to run the server
 
 
-#FrontEnd
+# FrontEnd
 Run npm i to download all dependencies
 Run 'npm start' to run frontend
