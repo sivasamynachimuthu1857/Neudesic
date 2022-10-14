@@ -14,7 +14,7 @@ function getDatabaseUri() {
 }
 
 // Set bcrypt factor lower during testing
-const BCRYPT_WORK_FACTOR = process.env.NODE_ENV === "test" ? 1 : 12;
+const BCRYPT_WORK_FACTOR = process.env.NODE_ENV === "neudesic" ? 1 : 12;
 
 console.log("Application Configuration: ".green);
 console.log("SECRET_KEY ".yellow, SECRET_KEY);

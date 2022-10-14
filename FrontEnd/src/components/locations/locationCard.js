@@ -6,11 +6,7 @@ import useStyles from "../theme";
 function LocationCard({ location }) {
   var classes = useStyles();
   return (
-    <Card className={classes.locationList}
-      sx={{
-        maxWidth: "100%",
-      }}
-    >
+    <Card className={classes.locationList}>
       <Typography
         gutterBottom
         variant="h5"

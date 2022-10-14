@@ -11,21 +11,18 @@ import {
 import Title from "../../common/Title";
 import { Grid } from "@mui/material";
 import { Paper } from "@mui/material";
+import useStyles from "./../theme";
 
 export default function Chart(data) {
+  let classes = useStyles();
   const theme = useTheme();
 
   return (
-    <Grid item xs={12}>
+    <Grid item xs={10}>
       <Paper
       style={{padding:theme.spacing(2),
       }}
-        sx={{
-          p: 2,
-          display: "flex",
-          flexDirection: "column",
-          height: 500,
-        }}
+      className={classes.locationCountPaper}
       >
         <React.Fragment>
           <Title>Office Employee's</Title>
@@ -40,7 +37,7 @@ export default function Chart(data) {
               }}
             >
               <XAxis
-                dataKey="city"
+                dataKey="stateOrProvince"
                 stroke={theme.palette.text.secondary}
                 style={theme.typography.body2}
               >

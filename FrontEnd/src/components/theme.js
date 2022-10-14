@@ -111,6 +111,15 @@ export default makeStyles(theme => ({
   signupAvatar: {
     m: 1,
     bgcolor: "secondary.main"
-  }
+  },
+
+  locationCountPaper: {
+    p: 2,
+    display: "flex",
+    flexDirection: "column",
+    height: 500,
+  },
+
+  locationPaginationPaper: { p: 2, display: "flex", flexDirection: "column" }
 
 }));

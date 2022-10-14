@@ -55,7 +55,7 @@ function LocationContent() {
         {/* Chart */}
           <Chart data={locationData} />
         {/* # Listings */}
-        {/* <LocationCount data={locationData} /> */}
+        <LocationCount data={locationData} />
       </Grid>
       <Copyright sx={{ pt: 4 }} />
     </Container>

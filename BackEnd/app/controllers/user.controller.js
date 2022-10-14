@@ -62,7 +62,6 @@ exports.authenticate = async (req, res, next) => {
   if (user) {
     const isValid = await bcrypt.compare(password, user.password);
     if (isValid === true) {
-      delete user[password];
       const token = createToken(user);
       return res.status(200).json({ token });
     } else {
@@ -87,7 +86,6 @@ exports.getAUser = async (req, res, next) => {
   });
 
   if (user.length > 0) {
-    delete user.password;
     return res.status(200).json({ user });
   }
 
