@@ -7,7 +7,7 @@ const db = require("./db");
 const app = express();
 
 var corsOptions = {
-  origin: "http://localhost:3000",
+  origin: "https://siva-pep-neudesic-app.azurewebsites.net",
 };
 
 //register middleware
