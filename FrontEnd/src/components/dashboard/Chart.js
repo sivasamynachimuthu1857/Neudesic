@@ -25,7 +25,7 @@ export default function Chart(data) {
       className={classes.locationCountPaper}
       >
         <React.Fragment>
-          <Title>Office Employee's</Title>
+          <Title>Neudesic Office Employee's</Title>
           <ResponsiveContainer>
             <BarChart
               data={data.data}
