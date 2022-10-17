@@ -8,7 +8,8 @@ const app = express();
 
 var corsOptions = {
   origin: "https://siva-pep-neudesic-app.azurewebsites.net",
-  credentials:true
+  credentials:true,
+  optionSuccessStatus:200
 };
 
 //register middleware
